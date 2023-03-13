@@ -25,7 +25,7 @@ As I embark on the Google Data Analyst Course, I will utilize a comprehensive si
 
 > Data
 
- &nbsp;&nbsp; [FitBit Fitness Tracker Data - Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit)
+ &nbsp;&nbsp; The data set is publicly available in [Kaggle, FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit)
  
  > Tools
  
@@ -34,6 +34,6 @@ As I embark on the Google Data Analyst Course, I will utilize a comprehensive si
 ## Prepare
 > Summary Of Data
 
-&nbsp;&nbsp; The [Kaggle database](https://www.kaggle.com/datasets/arashnic/fitbit) included eighteen diffrent files, which share informations about activity, steps, intensity, calories, sleep, heart rate and weight of around 33 Fitbit users, period of two months in 2016.
+&nbsp;&nbsp; The Kaggle database contains a wealth of information, comprising of eighteen different files, each detailing various aspects of activity, such as steps, intensity, calories burned, sleep patterns, heart rate and weight, among other metrics. The data pertains to approximately 33 Fitbit users and covers a two-month period in 2016.
 
 > Limitations of Data
