@@ -3,7 +3,7 @@
 ---
 
 ## Introduction
-I work for Bellabeat, a high-tech manufacturer of health-focused products for women, as part of the marketing analysis team. Our Chief Creative Officer, Urška Sršen, is a firm believer in the potential of smart device fitness data to unlock new growth opportunities for our company.
+I work for [Bellabeat](https://bellabeat.com/), a high-tech manufacturer of health-focused products for women, as part of the marketing analysis team. Our Chief Creative Officer, Urška Sršen, is a firm believer in the potential of smart device fitness data to unlock new growth opportunities for our company.
 
 To this end, we decided to analyze data from a competitor's (FitBit) device to gain insight into how consumers use smart devices. Using these insights, we aim to apply them to improve the performance of our own products. As part of this process, I was tasked with analyzing Fitbit data and presenting my findings and recommendations to the team.
 
@@ -15,32 +15,32 @@ As I embark on the Google Data Analyst Course, I will utilize a comprehensive si
 <br>
 
 ## Ask
-> **Business Task**
+> ### **Business Task**
 1. What are the latest trends in smart device usage?
 2. How can we apply these trends to better serve Bellabeat customers?
 3. In what ways can these trends inform and enhance Bellabeat's marketing strategy?
 
-> **Key Stakeholders**
+> ### **Key Stakeholders**
 1. Urška Sršen: Bellabeat's Chief Creative Officer and cofounder
 2. Sando Mur: Mathematician and cofounder of Bellabeat
 3. Bellabeat marketing analytics team: A team of skilled data analysts tasked with collecting, analyzing, and interpreting data that informs and guides Bellabeat's marketing strategy
 
-> **Data**
+> ### **Data**
 
  &nbsp;&nbsp; The data set is publicly available in [Kaggle, FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit)
  
- > **Tools**
+ > ### **Tools**
  
 &nbsp;&nbsp; Excel, SQL and Tableau
 <br>
 <br>
 
 ## Prepare
-> **Summary Of Data**
+> ### **Summary Of Data**
 
 &nbsp;&nbsp; The Kaggle database contains a wealth of information, comprising of eighteen different files, each detailing various aspects of activity, such as steps, intensity, calories burned, sleep patterns, heart rate and weight, among other metrics. The data pertains to approximately 33 Fitbit users and covers a two-month period in 2016.
 
-> **Limitations of Data**
+> ### **Limitations of Data**
 1.	Data has only two months of records and it is recorded in 2016, we can say it is out-dated
 2.	User participation is inconsistent, few data have only below 30 IDs recorded
 3.	The sample size is too small, considering [FitBit has approximately 30 million users.](https://www.statista.com/statistics/472600/fitbit-active-users/) 
@@ -49,7 +49,7 @@ As I embark on the Google Data Analyst Course, I will utilize a comprehensive si
 ## Process
 Cleaning and sorting would be done with Excel for normal data sets and SQL will be used for large data sets. 
 
-> **Below is the summary table of Excel data cleaning**
+> ### **Below is the summary table of Excel data cleaning**
 
 
 | File name                  | Format issues | Duplicates | Null values & Empty rows | Inconsistent data | ID String count | Total IDs recorded |
@@ -77,7 +77,7 @@ Cleaning and sorting would be done with Excel for normal data sets and SQL will 
 *	To count the IDs recorded, I have followed this method: the copied the full ID column to new column, and used the ‘remove duplicate’ function from ‘Data’ tab
 <br>
 
-> **Below is the summary table for SQL cleaning**
+> ### **Below is the summary table for SQL cleaning**
 
 | File name                       | Format issues | Duplicates | Null values & Empty rows | Inconsistent ID/data | Total Users recorded |
 |--------------------------------|---------------|------------|--------------------------|----------------------|----------------------|
@@ -86,8 +86,9 @@ Cleaning and sorting would be done with Excel for normal data sets and SQL will 
 | minuteIntensitiesNarrow_merged | Yes           | No         | No                       | No                   | 34                   |
 | minuteMETsNarrow_merged        | Yes           | No         | No                       | No                   | 34                   |
 | minuteStepsNarrow_merged       | Yes           | No         | No                       | No                   | 34                   |
+<br>
 
-*	While uploading the data file in Big Query for creating the table, it shows an error and it was unsuccessful. After checking in [the discussion form of Google data analyst capstone]( Google Data Analytics Capstone: Complete a Case Study - Discussions | Coursera) and after research, I have decided to give ‘Edit as text – Schema’
+*	While uploading the data file in Big Query for creating the table, it shows an error and it was unsuccessful. After checking in [the discussion form of Google data analyst capstone](https://www.coursera.org/learn/google-data-analytics-capstone/discussions) and after research, I have decided to give ‘Edit as text – Schema’
 
 ```SQL
 [
@@ -108,6 +109,7 @@ Cleaning and sorting would be done with Excel for normal data sets and SQL will 
    }
   ]
   ```
+  <br>
   
   * Split the date and time into different columns
  
@@ -121,7 +123,64 @@ TRIM(SUBSTR(ActivityMinute, instr(ActivityMinute,' '))) AS Time, Value
 FROM 
  `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.heartrate_seconds`
  ```
+ <br>
  
+ * Find duplicates
  
+ ```SQL
+ --To find duplicates
+SELECT DISTINCT * 
+FROM 
+ `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.minuteIntensitiesNarrow_merged` ;
+
+
+--If the file shows any duplicates, the below query is used for saving a new table without duplicates 
+CREATE TABLE
+  bellabeat_capstone_fitbitdata.minuteIntensitiesNarrow_distict
+AS
+SELECT DISTINCT *
+FROM 
+ `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.minuteIntensitiesNarrow_merged`;
+```
+ <br>
+ 
+ * Find null values
+ 
+ ```SQL
+ 
+SELECT *
+FROM 
+ `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.minuteIntensitiesNarrow_merged`
+WHERE Id IS NULL OR Date IS NULL OR Time IS NULL OR Value IS NULL
+```
+<br>
+
+* Check the consistency of length of ID, since we will be using ID as primary key for joins, so it is important to make sure that it has no error values.
+
+```SQL
+SELECT 
+ Id,
+ LENGTH(Id) AS id_column_length,
+ COUNT (*) AS count
+
+ FROM 
+ bellabeat-fitbit-data-cleaning.bellabeat_capstone_cleaned_datab1.c1_heartrate_seconds
+
+GROUP BY
+ Id,
+ id_column_length
+HAVING                             --This means that only the groups of records whose Id column lengths differ will be returned
+ COUNT (DISTINCT LENGTH(Id)) > 1
+ ```
+ <br>
+ 
+ * To count the IDs recorded
   
-   
+  ```SQL
+  SELECT 
+COUNT (DISTINCT Id) AS no_of_ids
+FROM 
+ bellabeat-fitbit-data-cleaning.bellabeat_capstone_cleaned_datab1.c1_heartrate_seconds
+ ```
+ 
+ 
