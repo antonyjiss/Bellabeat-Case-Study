@@ -182,5 +182,10 @@ COUNT (DISTINCT Id) AS no_of_ids
 FROM 
  bellabeat-fitbit-data-cleaning.bellabeat_capstone_cleaned_datab1.c1_heartrate_seconds
  ```
- 
- 
+  <br>
+  
+  ## Analyze
+  
+  From the data key features of the FitBit device is identified as Step, Sleep, Heart rate and Weight monitoring
+  The below table tells the total proportion of participation grouped by key device features 
+
