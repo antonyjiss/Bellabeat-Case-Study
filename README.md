@@ -196,7 +196,22 @@ FROM
 * Weight and Heart rate monitoring participation is comparatively very low, as we can see there are only 8 IDs logged in weight records
 * Since the sample participation is way too low, data related Weight and Heart rate will not be considered for analyses.
 * Highest proportion of engagement is reported for steps, 33 
+* Bellabeat should work on the least taken features of our competitor
 
+> **Total hourly sleep analysis**
+
+SQL Query for calculating hourly sleep per person
+
+```SQL
+SELECT Id, 
+ ROUND(SUM((TotalMinutesAsleep) / 31)/60, 2) AS Total_assleepminuts,  --Total 31 days recorded & divided by 60 - for getting horly sleep
+ ROUND(SUM ((TotalTimeInBed) / 31)/60, 2) AS Total_timeinBed
+FROM 
+ `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.sleepDay_merged_fixed`
+
+GROUP BY
+ Id
+```
 
 
 
