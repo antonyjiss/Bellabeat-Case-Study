@@ -186,7 +186,18 @@ FROM
   
   ## Analyze
   
-  From the data key features of the FitBit device is identified as Step, Sleep, Heart rate and Weight monitoring
-  The below table tells the total proportion of participation grouped by key device features 
+  > From the data key features of the FitBit device is identified as Step, Sleep, Heart rate and Weight monitoring
+  The below table tells the total proportion of participation numbers grouped by key device features 
+
+![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Share%20of%20participation.jpg?raw=true)
+
+### :mag: Key Findings
+
+* Weight and Heart rate monitoring participation is comparatively very low, as we can see there are only 8 IDs logged in weight records
+* Since the sample participation is way too low, data related Weight and Heart rate will not be considered for analyses.
+* Highest proportion of engagement is reported for steps, 33 
+
+
+
 
 
