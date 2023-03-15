@@ -189,3 +189,6 @@ FROM
   From the data key features of the FitBit device is identified as Step, Sleep, Heart rate and Weight monitoring
   The below table tells the total proportion of participation grouped by key device features 
 
+![Shre of Part](https://user-images.githubusercontent.com/125428851/225171575-12b8eabf-b322-4ec6-bc8d-dfaeaa54c6ce.jpg)
+
+
