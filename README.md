@@ -222,6 +222,6 @@ GROUP BY
 ### :mag: Key Findings
 
 * Getting sufficient sleep every day is crucial for overall well-being, [Centres for Disease Control and Prevention](https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html) recommends a minimum of 7 hours of sleep for the age range of 18-60. As per record analyses only 5 to 6 people only getting recommended sleep among 24 participations. 
-* 
+* The resulting pattern shows inconsistent records, here we should consider a few possibilities, 1) The sleep monitoring system with Fitbit is not user-friendly.  2) Most customers have the least concern for the importance of sound sleep as a healthy habit and show little interest in tracking their sleeping patterns. Based on the analysis, the sleeping records of the last 10-11 customers appear that they are averaging less than 4 hours of sleep per day.
 
 
