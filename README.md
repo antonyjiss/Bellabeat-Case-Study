@@ -186,8 +186,10 @@ FROM
   
   ## Analyze
   
-  > From the data key features of the FitBit device is identified as Step, Sleep, Heart rate and Weight monitoring
-  The below table tells the total proportion of participation numbers grouped by key device features 
+  > ### **Features & Particopation**
+  
+From the data key features of the FitBit device is identified as Step, Sleep, Heart rate and Weight monitoring
+The below table tells the total proportion of participation numbers grouped by key device features 
 
 ![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Share%20of%20participation.jpg?raw=true)
 
@@ -197,8 +199,9 @@ FROM
 * Since the sample participation is way too low, data related Weight and Heart rate will not be considered for analyses.
 * Highest proportion of engagement is reported for steps, 33 
 * Bellabeat should work on the least taken features of our competitor
-
-> **Total hourly sleep analysis**
+ <br>
+ 
+> ### **Total hourly sleep analysis**
 
 SQL Query for calculating hourly sleep per person
 
@@ -212,7 +215,13 @@ FROM
 GROUP BY
  Id
 ```
+![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Table%20Extract/Sleen%20table%20SH.png)
 
+![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Sleep%20Analysis.png)
 
+### :mag: Key Findings
+
+* Getting sufficient sleep every day is crucial for overall well-being, [Centres for Disease Control and Prevention](https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html) recommends a minimum of 7 hours of sleep for the age range of 18-60. As per record analyses only 5 to 6 people only getting recommended sleep among 24 participations. 
+* 
 
 
