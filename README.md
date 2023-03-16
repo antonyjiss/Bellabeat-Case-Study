@@ -274,4 +274,6 @@ To facilitate analysis, the data from the Daily sleep and Daily intensity datase
 
 ### :mag: Key Findings
 
-* 
+* The daily sleep time and daily activity has positive correlation relationship
+* This relationship can be used as one of the marketing strategies through the company’s interest in customer’s health and well-being.
+
