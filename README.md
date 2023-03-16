@@ -255,6 +255,6 @@ FROM
  `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.dailyIntensities_merged_fixed`
 ```
 
-![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Sleep%20Analysis.png)
+![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Proportion%20of%20activity.png)
 
 
