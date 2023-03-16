@@ -198,7 +198,7 @@ The below table tells the total proportion of participation numbers grouped by k
 * Weight and Heart rate monitoring participation is comparatively very low, as we can see there are only 8 IDs logged in weight records
 * Since the sample participation is way too low, data related Weight and Heart rate will not be considered for analyses.
 * Highest proportion of engagement is reported for steps, 33 
-* Bellabeat should work on the least taken features of our competitor
+* Bellabeat should work on the least taken features of our competitor, combined with [advanced technologies](https://www.edumed.org/spotlight/wearable-tech-smart-devices/)
  <br>
  
 > ### **Total hourly sleep analysis**
@@ -223,5 +223,15 @@ GROUP BY
 
 * Getting sufficient sleep every day is crucial for overall well-being, [Centres for Disease Control and Prevention](https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html) recommends a minimum of 7 hours of sleep for the age range of 18-60. As per record analyses only 5 to 6 people only getting recommended sleep among 24 participations. 
 * The resulting pattern shows inconsistent records, here we should consider a few possibilities, 1) The sleep monitoring system with Fitbit is not user-friendly.  2) Most customers have the least concern for the importance of sound sleep as a healthy habit and show little interest in tracking their sleeping patterns. Based on the analysis, the sleeping records of the last 10-11 customers appear that they are averaging less than 4 hours of sleep per day.
+ <br>
+ 
+> ### Target Customers
+The objective is to determine the group of customers who use health tracking devices consistently.
 
+<div class='tableauPlaceholder' id='viz1678923369944' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BellabeatActiveHours&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BellabeatActiveHours&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BellabeatActiveHours&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>              
+### :mag: Key Findings
+
+* Based on the visualization, it is evident that Tuesday and Wednesday are the days when people tend to participate in high-intensity activities more frequently
+* Two distinct peaks in high-intensity activity are observed during the day, specifically at 12 pm and 7 pm
+* Both of the aforementioned trends point towards the workout schedule of office workers. [Research indicates](https://www.perfectgym.com/en/blog/club-owners/when-gym-least-busy) that office workers tend to have a higher tendency to exercise in the middle of the week, which is consistent with the high-intensity activity observed on Tuesday and Wednesday. Additionally, the peak intensity time at 7 pm aligns with after-office hours, [further supporting](https://www.theladders.com/career-advice/this-is-the-day-of-the-week-people-are-most-likely-to-workout) this trend
 
