@@ -256,6 +256,8 @@ FROM
 ```
 
 ![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Proportion%20of%20activity.png)
+<br>
 
+### :mag: Key Findings
 * The largest portion of activity minutes belongs to sedentary activities, accounting for 81.3% of total minutes recorded. The [Fitbit website](https://community.fitbit.com/t5/Web-API-Development/Sedentary-Time-Explanation/td-p/1945560#:~:text=Sedentary%2FActive%20time%20is%20calculated,article%20for%20Hourly%20Activity%20Goals.) explains what is sedentary minutes, it is technically the total inactive minutes of activity recorded. 
 * These statistics shows that users are mainly utilizing the FitBit app to record routine daily activities such as commuting, minor movements throughout the day, rather than tracking fitness activities like running.
