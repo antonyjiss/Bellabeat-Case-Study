@@ -237,4 +237,24 @@ The objective is to determine the group of customers who use health tracking dev
 * Based on the visualization, it is evident that Tuesday and Wednesday are the days when people tend to participate in high-intensity activities more frequently
 * Two distinct peaks in high-intensity activity are observed during the day, specifically at 12 pm and 7 pm
 * Both of the aforementioned trends point towards the workout schedule of office workers. [Research indicates](https://www.perfectgym.com/en/blog/club-owners/when-gym-least-busy) that office workers tend to have a higher tendency to exercise in the middle of the week, which is consistent with the high-intensity activity observed on Tuesday and Wednesday. Additionally, the peak intensity time at 7 pm aligns with after-office hours, [further supporting](https://www.theladders.com/career-advice/this-is-the-day-of-the-week-people-are-most-likely-to-workout) this trend
+<br>
+
+> ### Ratio of Activity Classification
+This analysis is to understand customers' daily activity intensity to better understand their activity behavioral patterns.
+
+```SQL
+--To find the percentage of each catagory activity
+SELECT
+
+  (AVG(SedentaryMinutes)/(AVG(SedentaryMinutes)+AVG(LightlyActiveMinutes)+AVG(FairlyActiveMinutes)+AVG    (VeryActiveMinutes))) * 100 AS Sedentary_percentage,
+  (AVG(LightlyActiveMinutes)/(AVG(SedentaryMinutes)+AVG(LightlyActiveMinutes)+AVG(FairlyActiveMinutes)+AVG(VeryActiveMinutes))) * 100 AS Lightly_Active_percentage,
+  (AVG(FairlyActiveMinutes)/(AVG(SedentaryMinutes)+AVG(LightlyActiveMinutes)+AVG(FairlyActiveMinutes)+AVG(VeryActiveMinutes))) * 100 AS Fairly_Active_percentage,
+  (AVG(VeryActiveMinutes)/(AVG(SedentaryMinutes)+AVG(LightlyActiveMinutes)+AVG(FairlyActiveMinutes)+AVG(VeryActiveMinutes))) * 100 AS Very_Active_percentage
+
+FROM 
+ `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.dailyIntensities_merged_fixed`
+```
+
+![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Sleep%20Analysis.png)
+
 
