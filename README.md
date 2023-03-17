@@ -191,13 +191,12 @@ FROM
 From the data key features of the FitBit device is identified as Step, Sleep, Heart rate and Weight monitoring
 The below table tells the total proportion of participation numbers grouped by key device features 
 
-![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Share%20of%20participation.jpg?raw=true)
+<div class='tableauPlaceholder' id='viz1679073037486' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sh&#47;ShareofParticipation&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ShareofParticipation&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sh&#47;ShareofParticipation&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
 
 ### :mag: Key Findings
 
 * Weight and Heart rate monitoring participation is comparatively very low, as we can see there are only 8 IDs logged in weight records
 * Since the sample participation is way too low, data related Weight and Heart rate will not be considered for analyses.
-* Highest proportion of engagement is reported for steps, 33 
 * Bellabeat should work on the least taken features of our competitor, combined with [advanced technologies](https://www.edumed.org/spotlight/wearable-tech-smart-devices/)
  <br>
  
@@ -221,7 +220,7 @@ GROUP BY
 
 ### :mag: Key Findings
 
-* Getting sufficient sleep every day is crucial for overall well-being, [Centres for Disease Control and Prevention](https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html) recommends a minimum of 7 hours of sleep for the age range of 18-60. As per record analyses only 5 to 6 people only getting recommended sleep among 24 participations. 
+* Getting sufficient sleep every day is crucial for overall well-being, [Centres for Disease Control and Prevention](https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html) recommends a minimum of 7 hours of sleep for the age range of 18-60. As per record analyses only 5 to 6 people only getting recommended sleep among 24 participants. 
 * The resulting pattern shows inconsistent records, here we should consider a few possibilities, 1) The sleep monitoring system with Fitbit is not user-friendly.  2) Most customers have the least concern for the importance of sound sleep as a healthy habit and show little interest in tracking their sleeping patterns. Based on the analysis, the sleeping records of the last 10-11 customers appear that they are averaging less than 4 hours of sleep per day.
  <br>
  
@@ -260,7 +259,7 @@ FROM
 
 ### :mag: Key Findings
 * The largest portion of activity minutes belongs to sedentary activities, accounting for 81.3% of total minutes recorded. The [Fitbit website](https://community.fitbit.com/t5/Web-API-Development/Sedentary-Time-Explanation/td-p/1945560#:~:text=Sedentary%2FActive%20time%20is%20calculated,article%20for%20Hourly%20Activity%20Goals.) explains what is sedentary minutes, it is technically the total inactive minutes of activity recorded. 
-* These statistics shows that users are mainly utilizing the FitBit app to record routine daily activities such as commuting, minor movements throughout the day, rather than tracking fitness activities like running.
+* These statistics shows that users are mainly utilizing the FitBit app to record daily routine activities such as commuting, minor movements throughout the day, rather than tracking fitness activities like running.
 <br>
 
 > ### Quality Sleep Vs Daily Activity
@@ -319,7 +318,7 @@ Two tables results were imported into Tableau and a new data source was created 
 ### :mag: Key Findings
 
 * Calories, steps, and intensity activity show consistent momentum until the second day, but after that, steps exhibit a negative correlation while intensity activity exhibits a positive correlation with time.
-* While normal daily routines may contribute to burning calories, intensive activities show a strong positive correlation with calorie burning.
+* While normal daily routines contribute less to burning calories, and intensive activities show a strong positive correlation with calorie burning.
 * We can encourage and promote customers to engage in intensive activities to burn more calories.
 
 ## Share
@@ -329,5 +328,10 @@ The final visulization and presentation available in Tableau
 ## Act
 
 > ### Conclusion
-
-
+* Weight and heart rate monitoring participation is very low, with only 8 IDs logged in weight records. Therefore, data related to weight and heart rate will not be considered for analysis due to the small sample size
+* Out of 24 participants, only a few (5-6) achieved recommended sleep. The sleep patterns of the last 10-11 participants indicate they are averaging less than 4 hours of sleep per day, which is unreliable.
+* The visualization indicates that high-intensity activities are more frequent on Tuesdays and Wednesdays, with two distinct peaks at 12 pm and 7 pm.e assume that most of our customers are working-class individuals.
+* The visualization shows that high-intensity activities are most frequent on Tuesdays and Wednesdays, with two distinct peaks at 12 pm and 7 pm. This led us to assume that our customers are mostly working-class individuals.
+* Users primarily use the Fitbit device to track daily routine activities such as commuting and minor movements throughout the day, rather than tracking fitness activities like running and aerobic exercise.
+* There is a positive correlation between daily sleep time and daily activity. Additionally, when there is a high-intensity activity, we observe that the duration and quality of sleep is also high
+* Regular daily routines have a lower impact on calorie burning, whereas [high-intensity activities](https://thestrongkitchen.com/blog/post/aerobic-vs-anaerobic-exercise-how-to-burn-the-most-fat-and-carbohydrates#:~:text=That%20being%20said%2C%20high%2Dintensity,from%20fat%20during%20anaerobic%20exercise.) show a strong positive correlation with calorie burning. Therefore, focusing on intensive activities is more effective for burning calories. 
