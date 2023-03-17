@@ -334,4 +334,21 @@ The final visulization and presentation available in Tableau
 * The visualization shows that high-intensity activities are most frequent on Tuesdays and Wednesdays, with two distinct peaks at 12 pm and 7 pm. This led us to assume that our customers are mostly working-class individuals.
 * Users primarily use the Fitbit device to track daily routine activities such as commuting and minor movements throughout the day, rather than tracking fitness activities like running and aerobic exercise.
 * There is a positive correlation between daily sleep time and daily activity. Additionally, when there is a high-intensity activity, we observe that the duration and quality of sleep is also high
-* Regular daily routines have a lower impact on calorie burning, whereas [high-intensity activities](https://thestrongkitchen.com/blog/post/aerobic-vs-anaerobic-exercise-how-to-burn-the-most-fat-and-carbohydrates#:~:text=That%20being%20said%2C%20high%2Dintensity,from%20fat%20during%20anaerobic%20exercise.) show a strong positive correlation with calorie burning. Therefore, focusing on intensive activities is more effective for burning calories. 
+* Regular daily routines have a lower impact on calorie burning, whereas [high-intensity activities](https://thestrongkitchen.com/blog/post/aerobic-vs-anaerobic-exercise-how-to-burn-the-most-fat-and-carbohydrates#:~:text=That%20being%20said%2C%20high%2Dintensity,from%20fat%20during%20anaerobic%20exercise.) show a strong positive correlation with calorie burning. Therefore, focusing on intensive activities is more effective for burning calories.
+<br>
+
+> ### Recommendations
+* The device features:
+
+We should more focus on underused features of our competitors, we can conduct research on the sleep monitoring, heart rate monitoring, and weight monitoring capabilities of smart devices. By exploring [innovative ideas](https://www.edumed.org/spotlight/wearable-tech-smart-devices/), we can enhance these features and create devices that offer unique advantages and more userfriendly. 
+For instance, [wifi connected weight scales](https://www.familyhandyman.com/article/about-smart-scales/#:~:text=Once%20it%20measures%20your%20weight,app%20to%20store%20this%20data.), thereby eliminating the need for manual weight tracking.
+
+* Target Customers:
+ 
+Based on our analysis, we have identified that Fitbit's primary customer base consists of working-class individuals who typically work 9-6 jobs. To expand our reach, Bellabeat can explore the preferences of other customer categories and introduce an application program tailored to [their needs](https://www.thebump.com/a/9-ways-to-work-out-when-you-have-toddler). However, we can still provide support to the working-class category by expanding our marketing efforts.
+
+*	Encouragement and educate customers:
+
+Developing a [motivational](https://www.inkin.com/blog/en/How-A-Fitness-Tracker-Creates-Motivation-And-Accountability) application platform is crucial to encourage customers and help then to be in track, especially since many people do not use FitBit for aerobic exercise. A marketing strategy can be created to emphasize the importance of health also how Bellabeat can help individuals establish healthy routines and [how fitness trackers can boost the health](https://www.webmd.com/fitness-exercise/news/20220726/more-evidence-fitness-trackers-can-boost-your-health).
+<br>
+This can involve implementing a point system to track activity milestones such as calorie burning and steps taken. Users can receive motivational notes each time they reach a milestone to inspire them to achieve more.
