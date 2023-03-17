@@ -276,4 +276,43 @@ To facilitate analysis, the data from the Daily sleep and Daily intensity datase
 
 * The daily sleep time and daily activity has positive correlation relationship
 * This relationship can be used as one of the marketing strategies through the company’s interest in customer’s health and well-being.
+<br>
+
+> ### Calories and Intensity
+
+This analysis will focus on calories burned as the main parameter, investigating whether regular daily activities contribute significantly to calorie burn.
+In view of three data sets 1) Daily calories 2) Daily steps 3) Daily high-intensive activity.
+
+```SQL
+--Creating Inner Join with Daily Calories and Daily Steps, Id - as primary key
+SELECT 
+    a.Id,
+    a.ActivityDay,
+    a.Calories,
+    b.stepTotal
+FROM 
+    `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.dailyCalories` AS a
+JOIN 
+    `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.dailySteps` AS b
+ON 
+    a.Id = b.Id
+    
+--Creating Inner Join with Daily Calories and Daily Intensive Activity
+SELECT 
+    a.Id, 
+    a.ActivityDay, 
+    a.Calories, 
+    b.VeryActiveMinutes
+FROM 
+    `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.dailyCalories` AS a
+JOIN 
+    `bellabeat-fitbit-data-cleaning.bellabeat_capstone_fitbitdata.dailyIntensities_merged_fixed` AS b
+ON 
+    a.Id = b.Id AND a.ActivityDay = b.ActivityDay
+```
+
+Two tables results were imported into Tableau and a new data source was created using calories as the primary key.
+
+<div class='tableauPlaceholder' id='viz1679011859396' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IntensityVsStep&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IntensityVsStep&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IntensityVsStep&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+
 
