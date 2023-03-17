@@ -322,4 +322,12 @@ Two tables results were imported into Tableau and a new data source was created 
 * While normal daily routines may contribute to burning calories, intensive activities show a strong positive correlation with calorie burning.
 * We can encourage and promote customers to engage in intensive activities to burn more calories.
 
+## Share
+
+The final visulization and presentation available in Tableau
+
+## Act
+
+> ### Conclusion
+
 
