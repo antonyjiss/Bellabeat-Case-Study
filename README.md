@@ -1,3 +1,5 @@
+![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/GitHub%20Cover%20Bellabeat1.png)
+
 # **Bellabeat-Case Study**
 ### [**Google Data Analyst Certificate - Capstone**](https://www.coursera.org/professional-certificates/google-data-analytics)
 ---
