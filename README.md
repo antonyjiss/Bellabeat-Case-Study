@@ -185,7 +185,9 @@ FROM
  bellabeat-fitbit-data-cleaning.bellabeat_capstone_cleaned_datab1.c1_heartrate_seconds
  ```
   <br>
-  
+ 
+![Alt text](https://github.com/antonyjiss/Bellabeat-Case-Study/blob/main/Visulization/Screenshot%202023-03-21%201224211.png)
+ 
   ## Analyze
   
   > ### **Features & Particopation**
@@ -326,7 +328,7 @@ Two tables results were imported into Tableau and a new data source was created 
 
 ## Share
 
-The final visulization and presentation available in Tableau
+The final visulization and presentation available in [Tableau/Jiss](https://public.tableau.com/app/profile/jiss6941)
 
 ## Act
 
